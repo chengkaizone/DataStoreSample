@@ -1,0 +1,9 @@
+
+
+protoc --java_out=../java FoodModel.proto
+
+build.gradle
+implementation protobuf-java
+
+eg.
+implementation 'com.google.protobuf:protobuf-java:3.10.0'

@@ -1,0 +1,25 @@
+syntax="proto3";
+
+//import "google/protobuf/any.proto";
+
+//package com.tony.datastoresample;
+
+option java_package = "com.tony.datastoresample"; //
+option java_outer_classname = "FoodModelProto";
+
+message FoodModel {
+
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+  Sex sex = 4;
+
+  enum Sex {
+    DEFAULT=0;
+    MALE=1;
+    FEMALE=2;
+  }
+
+
+}
+
